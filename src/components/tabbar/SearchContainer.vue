@@ -5,6 +5,7 @@
 </template>
 
 <script>
+	console.log('search')
 </script>
 
 <style scoped lang="less">

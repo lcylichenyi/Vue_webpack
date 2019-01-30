@@ -5,6 +5,7 @@
 </template>
 
 <script>
+	console.log('member')
 </script>
 
 <style scoped lang="less">

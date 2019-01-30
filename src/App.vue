@@ -3,6 +3,7 @@
 		<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title">导航栏</h1>
 		</header>
+
 		<router-view></router-view>
 		<nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
@@ -32,6 +33,7 @@
 <style scoped lang="less">
 .app-container {
 	padding-top: 45px;
+	padding-bottom: 50px;
 }
 
 </style>

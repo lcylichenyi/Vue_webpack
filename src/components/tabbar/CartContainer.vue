@@ -5,6 +5,7 @@
 </template>
 
 <script>
+	console.log('cart')
 </script>
 
 <style scoped lang="less">
