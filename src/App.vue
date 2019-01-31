@@ -3,8 +3,9 @@
 		<header id="header" class="mui-bar mui-bar-nav">
 			<h1 class="mui-title">导航栏</h1>
 		</header>
-
-		<router-view></router-view>
+		<transition>
+			<router-view></router-view>
+		</transition>
 		<nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="/home">
 				<span class="mui-icon mui-icon-home"></span>
@@ -34,6 +35,26 @@
 .app-container {
 	padding-top: 45px;
 	padding-bottom: 50px;
+	overflow-x: hidden;
+
+	.mui-bar {
+		height: 50px; 
+	}
+}
+.v-enter {
+	transform: translateX(100%);
 }
 
+.v-leave-to {
+	transform: translateX(-100%);
+	position: absolute;
+}
+.v-enter,
+.v-leave-to {
+	opacity: 0;
+}
+.v-enter-active,
+.v-leave-active {
+	transition: all 0.2s ease;
+}
 </style>
